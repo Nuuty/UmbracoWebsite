@@ -1,0 +1,10 @@
+﻿@using UmbracoWebsite.Controllers
+@model UmbracoWebsite.Models.ContactViewModel
+
+@using (Html.BeginUmbracoForm<ContactPostController>("Submit","ContactForm"))
+{
+    @Html.EditorFor(x => Model)
+    <input type = "submit" name = "Submit" value = "Submit" />
+    //@Html.EditorFor(x => Model)
+
+ }
